@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <form action="#" method="post" name="frmDK" id="frmDK">
+        <table border="1" cellspacing="0" cellpadding="5" >
+            <tr>
+                <td colspan="2">Nhập thông tin đăng ký </td>
+            </tr>
+
+            <tr>
+                <td><label for="tentruycap">Tên truy cập</label></td>
+                <td><input type="text" name="tentruycap" id="tentruycap" required placeholder="nhập tên truy cập" autofocus>*</td>
+            </tr>
+            <tr>
+                <td><label for="mk">Mật khẩu</label></td>
+                <td><input type="password" name="mk" id="mk" required placeholder="mật khẩu">*</td>
+            </tr>
+            <tr>
+                <td><label for="nhaplaiMK">Nhập lại mật khẩu</label></td>
+                <td><input type="password" name="nhaplaiMK" id="nhaplaiMK" required>*</td>
+            </tr>
+            <tr>
+                <td><label for="tinhthanh">Tỉnh thành</label></td>
+                <td>
+                    <select name="tinhthanh" id="tinhthanh" multiple>
+                        <option value="0">Cần Thơ</option>
+                        <option value="1">An Giang</option>
+                        <option value="2">TP HCM</option>
+                    </select>
+                    *
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hoten">Họ tên</label></td>
+                <td><input type="text" name="hoten" id="hoten" required>*</td>
+            </tr>
+            <tr>
+                <td><label for="diachi">Địa chỉ</label></td>
+                <td><input type="text" name="diachi" id="diachi" required>*</td>
+            </tr>
+            <tr>
+                <td><label for="sdt">Số điện thoại</label></td>
+                <td><input type="text" name="sdt" id="sdt" required>*</td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" required>*</td>
+            </tr>
+            <tr>
+                <td><label for="ns">Ngày sinh</label></td>
+                <td><input type="date" name="ns" id="ns" required>*</td>
+            </tr>
+            <tr>
+                <td><label for="msat">Mã số an toàn</label></td>
+                <td>
+                    <input type="text" name="msat" id="msat" required maxlength="4">
+                    <img src="images/msat.jfif" alt="mã số an toàn" width="50" height="20">
+                    <font color="red">*</font>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dy">Đồng ý với quy định thành viên bên dưới:</label></td>
+                <td><input type="checkbox" name="dy" id="dy" required>*</td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>* là bắt buộc nhập</label></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="reset" name="reset" id="reset" required value="Nhập lại">
+                    <input type="submit" name="submit" id="submit" required value="Đăng ký">*
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
